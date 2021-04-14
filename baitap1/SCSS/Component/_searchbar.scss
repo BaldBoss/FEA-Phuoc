@@ -1,0 +1,24 @@
+.searchbar {
+  height: 50px;
+  background-color: rgb(53, 132, 250);
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  @include flexJustifyContent(space-between);
+
+  h5 {
+    margin-right: 30px;
+    font-size: 1.4rem;
+    color: #fff;
+  }
+  ul {
+    display: flex;
+    list-style-type: none;
+
+    li {
+      margin-right: 40px;
+      color: #fff;
+      font-size: 1.2rem;
+    }
+  }
+}

@@ -1,0 +1,308 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Header {
+  height: 200px;
+  width: 100%;
+  background-image: url("/baitap1/img/banner-2.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+}
+
+.Header .h1 {
+  font-size: 3rem;
+}
+
+.searchbar {
+  height: 50px;
+  background-color: #3584fa;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.searchbar h5 {
+  margin-right: 30px;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.searchbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.searchbar ul li {
+  margin-right: 40px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.container {
+  padding: 0 5%;
+  background-image: url("/baitap1/img/course-phone.png");
+  background-size: 150px 300px;
+  background-position: right center;
+  background-repeat: repeat-y;
+}
+
+.bodyContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.bodyContent .bodyContent__left {
+  width: 30%;
+}
+
+.bodyContent .bodyContent__left h1 {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bodyContent .bodyContent__left .ContentCard {
+  width: 90%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.bodyContent .bodyContent__left .ContentCard .imgBox, .bodyContent .bodyContent__left .ContentCard .imgBox2, .bodyContent .bodyContent__left .ContentCard .imgbox3 {
+  background-image: url("/baitap1/img/avatar-2.jpg");
+  height: 250px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bodyContent .bodyContent__left .ContentCard .imgBox2 {
+  background-image: url("/baitap1/img/backend.png");
+}
+
+.bodyContent .bodyContent__left .ContentCard .imgbox3 {
+  background-image: url("/baitap1/img/tdknlt.png");
+}
+
+.bodyContent .bodyContent__left .ContentCard .Card__Text .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+.bodyContent .bodyContent__left .ContentCard .Card__Text .row .title {
+  width: 40%;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.bodyContent .bodyContent__left .ContentCard .Card__Text .row .content {
+  width: 60%;
+}
+
+.bodyContent .bodyContent__left .ContentCard .Card__Text .row .blueText {
+  color: blue;
+}
+
+.bodyContent .bodyContent__left .ContentCard .Card__Text .Text__Container {
+  padding: 10px 10px 10px 10px;
+}
+
+.bodyContent .bodyContent__left .ContentCard .Card__Text .Text__Container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+.bodyContent .bodyContent__left .ContentCard .Card__Text .Text__Container ul li .yellowStarP {
+  color: #eecc0e;
+  margin-right: 5px;
+}
+
+.bodyContent .bodyContent__left .ContentCard .Card__Text .Text__Container p {
+  color: darkgrey;
+}
+
+.bodyContent .bodyContent__right {
+  width: 70%;
+}
+
+.bodyContent .bodyContent__right .contentRight__Container {
+  padding: 0 3%;
+}
+
+.bodyContent .bodyContent__right .contentRight__Container h1:not(:first-of-type) {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.bodyContent .bodyContent__right .contentRight__Container .skillRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.bodyContent .bodyContent__right .contentRight__Container .skillRow .skillTitle {
+  width: 20%;
+  text-transform: uppercase;
+}
+
+.bodyContent .bodyContent__right .contentRight__Container .skillRow .skillBar {
+  width: 80%;
+  border-radius: 4px;
+  background-color: darkgrey;
+  height: 40px;
+}
+
+.bodyContent .bodyContent__right .contentRight__Container .skillRow .skillBar .BarPercent {
+  width: 90%;
+  height: 100%;
+  background-color: #fd3477;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.bodyContent .bodyContent__right .contentRight__Container .skillRow .skillBar .cssSkill {
+  width: 70%;
+  background-color: #a454f0;
+}
+
+.bodyContent .bodyContent__right .contentRight__Container .skillRow .skillBar .javascriptSkill {
+  width: 50%;
+  background-color: #6770f8;
+}
+
+.bodyContent .bodyContent__right .contentRight__Container .skillRow .skillBar .golangSkill {
+  width: 85%;
+  background-color: #0051ff;
+}
+
+.bodyContent .bodyContent__right .contentRight__Container .quoteContainer {
+  border-left: 3px solid grey;
+  padding: 5px 10px 5px 2%;
+  margin-left: 20px;
+  background-color: #d5d6d6;
+}
+
+.bodyContent .bodyContent__right .contentRight__Container .gridContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.bodyContent .bodyContent__right .contentRight__Container .gridContainer .Card__Container {
+  padding: 20px;
+}
+
+.bodyContent .bodyContent__right .contentRight__Container .gridContainer .Card__Container .Card__Content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bodyContent .bodyContent__right .contentRight__Container .gridContainer .Card__Container .Card__Content .Circle__icon {
+  width: 80px;
+  height: 80px;
+  background-color: #0066ff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.bodyContent .bodyContent__right .contentRight__Container .gridContainer .Card__Container .Card__Content p {
+  text-align: justify;
+}
+
+.Footer {
+  height: 50px;
+  width: 100%;
+  background-color: #3584fa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  margin-top: 30px;
+}
+/*# sourceMappingURL=main.css.map */

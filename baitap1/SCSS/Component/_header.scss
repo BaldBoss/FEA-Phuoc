@@ -1,0 +1,13 @@
+.Header {
+  height: 200px;
+  width: 100%;
+  background-image: url("/baitap1/img/banner-2.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  @include flexCenterDirection(column);
+  color: #fff;
+
+  .h1 {
+    font-size: 3rem;
+  }
+}

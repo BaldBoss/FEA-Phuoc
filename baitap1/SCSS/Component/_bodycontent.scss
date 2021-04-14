@@ -1,0 +1,144 @@
+.bodyContent {
+  display: flex;
+  width: 100%;
+  .bodyContent__left {
+    width: 30%;
+    h1 {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .ContentCard {
+      width: 90%;
+
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10px;
+
+      .imgBox {
+        background-image: url("/baitap1/img/avatar-2.jpg");
+        height: 250px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+      .imgBox2 {
+        background-image: url("/baitap1/img/backend.png");
+        @extend .imgBox;
+      }
+      .imgbox3 {
+        background-image: url("/baitap1/img/tdknlt.png");
+        @extend .imgBox;
+      }
+      .Card__Text {
+        .row {
+          @include flexCenter();
+          padding: 10px 10px 10px 10px;
+          padding: 10px 10px 10px 10px;
+          .title {
+            width: 40%;
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-transform: uppercase;
+          }
+          .content {
+            width: 60%;
+          }
+          .blueText {
+            color: blue;
+          }
+        }
+        .Text__Container {
+          padding: 10px 10px 10px 10px;
+          ul {
+            display: flex;
+            list-style-type: none;
+            justify-content: flex-start;
+
+            padding-inline-start: 0px;
+            li {
+              .yellowStarP {
+                color: rgb(238, 204, 14);
+                margin-right: 5px;
+              }
+            }
+          }
+          p {
+            color: darkgrey;
+          }
+        }
+      }
+    }
+  }
+  .bodyContent__right {
+    width: 70%;
+    .contentRight__Container {
+      padding: 0 3%;
+      h1:not(:first-of-type) {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+      .skillRow {
+        display: flex;
+        margin-bottom: 40px;
+        .skillTitle {
+          width: 20%;
+          text-transform: uppercase;
+        }
+        .skillBar {
+          width: 80%;
+          border-radius: 4px;
+          background-color: darkgrey;
+          height: 40px;
+          .BarPercent {
+            width: 90%;
+            height: 100%;
+            background-color: rgb(253, 52, 119);
+            border-radius: 4px;
+            @include flexCenter();
+            color: #fff;
+          }
+          .cssSkill {
+            width: 70%;
+            background-color: rgb(164, 84, 240);
+          }
+          .javascriptSkill {
+            width: 50%;
+            background-color: rgb(103, 112, 248);
+          }
+          .golangSkill {
+            width: 85%;
+            background-color: rgb(0, 81, 255);
+          }
+        }
+      }
+      .quoteContainer {
+        border-left: 3px solid grey;
+        padding: 5px 10px 5px 2%;
+        margin-left: 20px;
+        background-color: rgb(213, 214, 214);
+      }
+      .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .Card__Container {
+          padding: 20px;
+          .Card__Content {
+            @include flexCenterDirection(column);
+            .Circle__icon {
+              width: 80px;
+              height: 80px;
+              background-color: rgb(0, 102, 255);
+              border-radius: 50%;
+              @include flexCenter();
+              color: #fff;
+            }
+            p {
+              text-align: justify;
+            }
+          }
+        }
+      }
+    }
+  }
+}
