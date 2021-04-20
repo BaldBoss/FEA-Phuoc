@@ -1,0 +1,481 @@
+.menu-on-image-hover .hover-menu {
+  position: relative;
+  overflow: hidden;
+  margin: 8px;
+  min-width: 340px;
+  max-width: 480px;
+  max-height: 290px;
+  width: 100%;
+  background: #000;
+  text-align: center;
+}
+.menu-on-image-hover .hover-menu img {
+  position: relative;
+  max-width: 100%;
+  top: 0;
+  right: 0;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+.menu-on-image-hover .hover-menu div {
+  position: absolute;
+  top: 0;
+  left: -120px;
+  width: 120px;
+  height: 100%;
+  padding: 8px 4px;
+  background: #000;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.menu-on-image-hover .hover-menu div a {
+  display: block;
+  line-height: 2;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+  padding: 5px 15px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.menu-on-image-hover .hover-menu div a:hover {
+  text-decoration: underline;
+}
+.menu-on-image-hover .hover-menu:hover img {
+  opacity: 0.5;
+  right: -120px;
+}
+.menu-on-image-hover .hover-menu:hover div {
+  left: 0;
+  opacity: 1;
+}
+.image-overlay-on-hover .hover-img {
+  position: relative;
+  overflow: hidden;
+  margin: 8px;
+  min-width: 340px;
+  max-width: 480px;
+  max-height: 290px;
+  width: 100%;
+  background: #000;
+  text-align: center;
+}
+.image-overlay-on-hover .hover-img img {
+  position: relative;
+  max-width: 100%;
+  top: 0;
+  right: 0;
+  opacity: 1;
+}
+.image-overlay-on-hover .hover-img:hover figcaption {
+  position: absolute;
+  top: 0;
+  color: #fff;
+  background-color: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+.image-overlay-on-hover .hover-img figcaption h3 {
+  transition: 0.3s ease-in-out;
+  color: #fff;
+}
+/* staggered-animation */
+.staggered-animation {
+  overflow-x: hidden;
+  width: 100%;
+}
+.menu-toggler {
+  display: none;
+}
+.menu-toggler-label {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+.stagger-menu {
+  list-style-type: none;
+  margin: 16px 0;
+  padding: 0;
+}
+/* vi trong html da declare --i cho moi element li. nen se dung transition-delay de tao hieu ung stagger. 
+bang cach ung function calc lay so giay * voi moi --i bang var() */
+.stagger-menu li {
+  margin-bottom: 8px;
+  font-size: 18px;
+  opacity: 0;
+  transform: translateX(100%);
+  transition-property: opacity, transform;
+  transition-duration: 0.3s;
+  transition-delay: calc(0.08s * var(--i));
+}
+/* su dung :checked tai vi trong html dung type la checkbox
+set opacity ve lai la 1 de hien item. va cung set translatex bang 0 de ve lai dung vi tri */
+.menu-toggler:checked ~ .stagger-menu li {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: calc(0.08s * var(--i));
+}
+
+/*Bouncing loader  */
+/* display flex de 3 dau trong thang hang */
+.bouncing-loader {
+  display: flex;
+  justify-content: center;
+}
+/* chi vo div cua boungcing-loader. set width height cho cac div. add keyframe animation cho div.
+border-radius 50% de lam hinh tron. set */
+.bouncing-loader > div {
+  width: 20px;
+  height: 20px;
+  margin: 4rem 2rem;
+  background-color: black;
+  border-radius: 50%;
+  animation: bouncing-animate 0.6s infinite alternate;
+}
+/* keyframe cho cac div. set khi hieu ung 100% thi opacity cua cac div se la 0.1,
+translateY de cho cac div nhay len nhay xuong */
+@keyframes bouncing-animate {
+  100% {
+    opacity: 0.1;
+    transform: translateY(-20px);
+  }
+}
+/* set animation delay cho div o node 2 va 3 neu khong ca 3 div se nhay len cung 1 luc */
+.bouncing-loader > div:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.bouncing-loader > div:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+/* Height transition  */
+/* set maxwidht cua div ve 0 the ko hien len img ben trong.
+xong roi add transition cho max-height ben trong */
+.el {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s;
+}
+/* khi hover len div trigger se set max-height bang var(--max-height) 
+max-height se dc se ben trong javascript*/
+.trigger:hover > .el {
+  max-height: var(--max-height);
+}
+
+/* Image rotate on hover */
+.image-rotate-on-hover {
+  margin-top: 30px;
+}
+.image-rotate-on-hover {
+  overflow: hidden;
+  margin: 8px;
+  max-width: 480px;
+  max-height: 290px;
+  width: 100%;
+}
+.image-rotate-on-hover .hover-rotate img {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.image-rotate-on-hover .hover-rotate:hover img {
+  transform: scale(1.5) rotate(5deg);
+}
+
+/* Rotating Card   */
+.card {
+  position: relative;
+  height: 500px;
+  max-width: 400px;
+  margin: 2rem;
+  box-shadow: none;
+}
+/* set thuoc tinh absolute de 2 hinh trung len nhau.
+su dung thuoc tiunh backface-visibility de khi mat sau rotate 180deg se bi an di */
+.card-side {
+  height: 450px;
+  border-radius: 15px;
+  transition: all 1s ease;
+  position: absolute;
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
+  width: 80%;
+  padding: 2rem;
+  color: #fff;
+}
+.card-side.front {
+  background-color: blue;
+}
+/* rorate backside */
+.card-side.back {
+  transform: rotateY(180deg);
+  background-color: red;
+}
+/* rotatey mat truoc cua the ra sau */
+.card:hover .card-side.front {
+  transform: rotateY(-180deg);
+}
+/* rotate mat sau nguoc lai ra mat truoc */
+.card:hover .card-side.back {
+  transform: rotateY(0deg);
+}
+
+/*Hover underline animation  */
+/* display inline block de khi hover vao line se khong chay ra ngoai khoi vung div */
+.hover-underline .hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: blue;
+}
+/* su dung :after de them content line  */
+.hover-underline .hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  /* vi muon animation line di hang ngang nen dung scaleX 
+    vi chua mun line xuat hien khi chua hover nen se set ve 0
+    va set vi tri cua conten la o bottom left cua div*/
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: blue;
+  /* transform origin right de khi line mat di se di chuyen mat di tu phia ben phai */
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+/* set scalex thanh 1 de line xuat hien.
+va transform origine left de line se bat dau di chuyen xuat hien tu phia ben trai */
+.hover-underline .hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* border button */
+.animated-border-button {
+  background-color: cadetblue;
+  border: none;
+  color: #fff;
+  outline: none;
+  padding: 10px 40px 10px;
+  margin: 20px 20px 20px 20px;
+  position: relative;
+}
+/* dung before after de set content la 2 line cho div.
+1 line o phia tren cua div
+1 line o phia duoi cua div
+ca 2 line width set bang 25px de sau dung hover se set width line 100%
+sau do set transition cho ca 2 
+2 line se co animation chay het div khi hover */
+.animated-border-button:before,
+.animated-border-button:after {
+  content: "";
+  border: 0 solid transparent;
+  position: absolute;
+  width: 25px;
+  transition: all 0.5s;
+}
+.animated-border-button:before {
+  border-top: 2px solid cadetblue;
+  right: 0;
+  top: -4px;
+}
+.animated-border-button:after {
+  border-top: 2px solid cadetblue;
+  left: 0;
+  bottom: -4px;
+}
+.animated-border-button:hover:before,
+.animated-border-button:hover:after {
+  width: 100%;
+}
+
+/* Ripple loader */
+/* set height and width cho parent va dung position relation de set 2 div ben trong trong len nhau
+Set positon absolute cho 2 div roi set boder cho ca 2
+boder-raidus 50% de lam hinh trong
+o Keyframe tai 0% se set 2 div height and width la 0 va dat ca 2 vo chinh giua
+vi minh dat height and width cua parent la 80px 80px nen de set vo chinh giua chi can set top va left thanh 40px
+sau do set opacity tai 0% thanh 1 de sau nay khi bung ra tai 100% se set lai thanh 0 de lam chung mo di khi mo rong ra
+tai 100% se set nguoc lai top va left se set lai ve 0 va height and width set thanh 80px bang voi parent de co hieu ung
+bung ra.
+cuoi cung set div childent thu 2 animation delay de ca 2 div ko chay cung luc */
+.ripple-loader {
+  height: 80px;
+  width: 80px;
+  position: relative;
+  margin: 20px 20px 20px 20px;
+}
+.ripple-loader div {
+  position: absolute;
+  border: 5px solid black;
+  border-radius: 50%;
+  animation: ripple 1s ease-out infinite;
+}
+.ripple-loader div:nth-child(2) {
+  animation-delay: 0.5s;
+}
+@keyframes ripple {
+  0% {
+    top: 40px;
+    left: 40px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+  }
+}
+
+/*  Zoom in - out */
+.zoom-in-out-box {
+  margin: 24px 24px 24px 24px;
+  width: 50px;
+  height: 50px;
+  background: #f50057;
+  animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+/* donut loader */
+.donut-wrapper {
+  margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes donut-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(100deg);
+  }
+  50% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.donut-wrapper .donut {
+  display: inline-block;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 60px;
+  height: 60px;
+  border-left-color: #1010b4;
+  border-radius: 50%;
+  animation: donut-spin 1.2s linear infinite;
+  animation-direction: alternate;
+}
+
+/* fill button */
+.animated-fill-button {
+  padding: 40px;
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+.animated-fill-button:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* now.vn loading circle */
+
+/* set position relative de sau nay set 4 chilrent thanh absolute xac dinh vi tri cua childent 
+display flex de set chilrent vo giua parent
+keyframe rotate 1 turn de quay div 1 vong lien tuc */
+.now-loading {
+  height: 80px;
+  width: 80px;
+  margin: auto;
+  margin-top: 30px;
+  animation: rotate 1s infinite;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+/* set width height cho 4 childerent
+va set position absoluct de 4 cuc chilrent de len nhau o giua. */
+.now-loading .circle {
+  width: 20px;
+  position: absolute;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%;
+}
+/* set animation cho chilrent
+turn 1 thi circle1 se sang phai 20px va ve lai vi tri giua cung la 20px 
+lam tuong tu cho turn 2 3 4
+turn 2 qua trai turn 3 qua phai duoi turn 4 qua trai duoi
+problem solved XD*/
+.now-loading .circle1 {
+  animation: turn1 1s infinite;
+}
+
+@keyframes turn1 {
+  50% {
+    transform: translate(20px, 20px);
+  }
+}
+.now-loading .circle2 {
+  animation: turn2 1s infinite;
+}
+@keyframes turn2 {
+  50% {
+    transform: translate(-20px, 20px);
+  }
+}
+.now-loading .circle3 {
+  animation: turn3 1s infinite;
+}
+@keyframes turn3 {
+  50% {
+    transform: translate(20px, -20px);
+  }
+}
+.now-loading .circle4 {
+  animation: turn4 1s infinite;
+}
+@keyframes turn4 {
+  50% {
+    transform: translate(-20px, -20px);
+  }
+}
