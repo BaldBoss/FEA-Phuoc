@@ -1,0 +1,32 @@
+.hero {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("/baitap5/Coding_Bootstrap/img/13.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  h1 {
+    margin-bottom: 50px;
+  }
+  h5 {
+    margin-bottom: 20px;
+    width: 45rem;
+  }
+  button {
+    border: 1px solid #fff;
+  }
+  button:hover {
+    background-color: rgb(87, 80, 80);
+  }
+}
+@media screen and (max-width: 800px) {
+  .hero {
+    h5 {
+      width: 30rem;
+    }
+  }
+}
