@@ -108,4 +108,35 @@
 .imgGrid .card p {
   margin-bottom: 20px;
 }
+
+.galary-Container .row .cs-size {
+  width: 600px !important;
+}
+
+.galary-Container .row .content-right {
+  width: 50%;
+}
+
+.contactus-container ul {
+  list-style: none;
+}
+
+.contactus-container .content-right {
+  width: 50%;
+  margin-left: 50px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer .row ul {
+  list-style-type: none;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+.footer .row ul li a {
+  text-decoration: none;
+}
 /*# sourceMappingURL=style.css.map */
