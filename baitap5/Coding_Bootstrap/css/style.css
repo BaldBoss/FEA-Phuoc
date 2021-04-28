@@ -26,20 +26,16 @@
   background-position: center;
   background-size: cover;
 }
-
 .hero h1 {
   margin-bottom: 50px;
 }
-
 .hero h5 {
   margin-bottom: 20px;
   width: 45rem;
 }
-
 .hero button {
   border: 1px solid #fff;
 }
-
 .hero button:hover {
   background-color: #575050;
 }
@@ -49,43 +45,34 @@
     width: 30rem;
   }
 }
-
 .bf .introbf h1 {
   margin-top: 50px;
   margin-bottom: 20px;
 }
-
 .bf .introbf p {
   width: 45rem;
   margin-bottom: 40px;
 }
-
 .bf .bfcard {
   width: 100%;
 }
-
 .bf .bfcard .cardContainer {
   padding: 30px;
 }
-
 .bf .bfcard .cardContainer .card {
   width: 360px;
   border: none;
 }
-
-.bf .bfcard .cardContainer .card .card-body .fa-camera, .bf .bfcard .cardContainer .card .card-body .fa-heart, .bf .bfcard .cardContainer .card .card-body .fa-bicycle {
+.bf .bfcard .cardContainer .card .card-body .fa-camera, .bf .bfcard .cardContainer .card .card-body .fa-bicycle, .bf .bfcard .cardContainer .card .card-body .fa-heart {
   color: yellow;
   margin-bottom: 20px;
 }
-
 .bf .bfcard .cardContainer .card .card-body .fa-heart {
   color: red;
 }
-
 .bf .bfcard .cardContainer .card .card-body .fa-bicycle {
   color: blue;
 }
-
 .bf .bfcard .cardContainer .card .card-body h5 {
   margin-bottom: 15px;
 }
@@ -95,16 +82,13 @@
   margin-top: 20px;
   margin-bottom: 50px;
 }
-
 .imgGrid .card {
   border: none;
 }
-
 .imgGrid .card h5 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 .imgGrid .card p {
   margin-bottom: 20px;
 }
@@ -112,7 +96,6 @@
 .galary-Container .row .cs-size {
   width: 600px !important;
 }
-
 .galary-Container .row .content-right {
   width: 50%;
 }
@@ -120,7 +103,6 @@
 .contactus-container ul {
   list-style: none;
 }
-
 .contactus-container .content-right {
   width: 50%;
   margin-left: 50px;
@@ -129,14 +111,11 @@
 .footer a {
   text-decoration: none;
 }
-
 .footer .row ul {
   list-style-type: none;
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
 }
-
 .footer .row ul li a {
   text-decoration: none;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
