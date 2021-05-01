@@ -5,14 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/6d7ac25a30.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+ <script>
+ $(document).ready(function(){
+   AOS.init();
+ });
+
+$(window).on('load', function() {
+  AOS.refresh();
+});</script>
+      
+  
 </head>
 <body>
-    <div class="containter-fluid header">
+  <!-- header -->
+    <div class="containter-fluid header" data-aos="fade-down">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
             <div class="container-fluid">
@@ -40,26 +60,526 @@
                   </li>
             
                 </ul>
-                <form class="d-flex flex-wrap">
-                    <a class="nav-link  mx-auto" href="#" >Login</a>
-                  <button class="btn btn-outline-success  mx-auto" type="submit">Search</button>
-                </form>
+                <ul class="navbar-nav mt-4 mt-lg-0 ms-auto align-items-center">
+                  <li class="nav-item"><a class="nav-link text-light" href="#"><strong>Login</strong></a>
+                  </li>
+                  <li class="nav-item ms-lg-4 mt-4 mt-lg-0"><button class="btn btn-primary"><span
+                              class="btn-text text-light">Become a member</span><i
+                              class="bi bi-arrow-right-short text-light"
+                              style="margin-left: 15px"></i></button></li>
+              </ul>
               </div>
             </div>
           </nav>
         </div>
-
-
-        <h1 >Creating a Beautifull & Usefull Solutitons</h1>
-        <p>We know how large objects will act, but things on a 
-            small scale just do not act that way.
-        </p>
-        <div class="container-fluid text-center">
-            <button type="button" class="btn btn-primary text-white">Get Quote Now</button>
-            <button type="button" class="btn btn-transparent text-white">Get Quote Now</button>
-</div>
-            
-        
+        <div class="container py-5 py-md-7">
+          <div class="row justify-content-center">
+              <div class="text-center col-lg-8 justify-content-center py-lg-5">
+                  <h1 class="mt-0">Creating a Beautifull & Usefull Solutitons</h1>
+                  <h4 class="text-light" style="margin-top: 40px">We know how large objects will act, but
+                      things on a
+                      small scale just do not act that way.</h4>
+                  <div class="cta" style="margin-top: 20px"><button
+                          class="btn btn-primary rounded-pill mx-2 mt-4 mt-sm-0"><span class="btn-text">Get Quote
+                              Now</span></button><button
+                          class="btn text-light rounded-pill btn-outline-light mx-2 mt-4 mt-sm-0"><span
+                              class="btn-text">Learn More</span></button></div>
+              </div>
+          </div>
+          <div class="row justify-content-center align-items-stretch mt-5 mt-lg-7">
+              <div class="col-lg-4 mb-5 mb-lg-0 ">
+                  <div class="bg-light shadow-lg" style="padding: 20px 40px"><i
+                          class="bi bi-people-fill icn-lg text-primary"></i>
+                      <h3 class="text-color" style="margin-top: 10px">Investment Trading</h3>
+                      <p class="paragraph text-secondary" style="margin-top: 10px">the quick fox jumps over the
+                          lazy dog</p>
+                  </div>
+              </div>
+              <div class="col-lg-4 mb-5 mb-lg-0">
+                  <div class="bg-light shadow-lg" style="padding: 20px 40px"><i
+                          class="bi bi-people-fill icn-lg text-primary"></i>
+                      <h3 class="text-color" style="margin-top: 10px"> Raising Funds</h3>
+                      <p class="paragraph text-secondary" style="margin-top: 10px">the quick fox jumps over the
+                          lazy dog</p>
+                  </div>
+              </div>
+              <div class="col-lg-4 mb-5 mb-lg-0">
+                  <div class="bg-primary shadow-lg
+                 " style="padding: 20px 40px"><i
+                          class="bi bi-people icn-lg text-light"></i>
+                      <h3 class="h3 light-text" style="margin-top: 10px">Financial Analysis</h3>
+                      <p class="paragraph light-text" style="margin-top: 10px">the quick fox jumps over the
+                          lazy dog</p>
+                  </div>
+              </div>
+          </div>
+      </div> 
     </div>
+    <!-- Business -->
+    <section class="position-relative">
+      <div class="py-5">
+        <div class="container py-5">
+          <div class="row justify-content-center">
+            <div class="text-center col-lg-6">
+                <h2 class="text-dark">Better Strategy
+                    With Quality Business</h2>
+                <p class="paragraph text-secondary" style="margin-top: 10px">Problems trying to resolve the
+                    conflict between
+                    the two major realms of Classical physics: Newtonian mechanics </p>
+            </div>
+          </div>
+        </div>
+        <div class="container mt-md-4">
+          <div class="row align-items-stretch">
+            <div class="col-lg-4 mb-4 mb-lg-0 p-3">
+              <div class="card-item  border" style="padding: 35px 20px">
+                  <div class="d-flex"><i class="bi bi-people icn-lg text-primary"></i>
+                      <div style="margin-left: 20px">
+                          <h5 class="h5 text-dark">Investment Trading</h5>
+                          <p class="paragraph text-dark" style="margin-top: 5px">the quick fox jumps over the
+                              lazy dog</p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0 p-3">
+              <div class="card-item  border" style="padding: 35px 20px">
+                  <div class="d-flex"><i class="bi bi-people icn-lg text-primary"></i>
+                      <div style="margin-left: 20px">
+                          <h5 class="h5 text-dark">Investment Trading</h5>
+                          <p class="paragraph text-dark" style="margin-top: 5px">the quick fox jumps over the
+                              lazy dog</p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0 p-3">
+              <div class="card-item  border" style="padding: 35px 20px">
+                  <div class="d-flex"><i class="bi bi-people icn-lg text-primary"></i>
+                      <div style="margin-left: 20px">
+                          <h5 class="h5 text-dark">Investment Trading</h5>
+                          <p class="paragraph text-dark" style="margin-top: 5px">the quick fox jumps over the
+                              lazy dog</p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0 p-3">
+              <div class="card-item  border" style="padding: 35px 20px">
+                  <div class="d-flex"><i class="bi bi-people icn-lg text-primary"></i>
+                      <div style="margin-left: 20px">
+                          <h5 class="h5 text-dark">Investment Trading</h5>
+                          <p class="paragraph text-dark" style="margin-top: 5px">the quick fox jumps over the
+                              lazy dog</p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0 p-3">
+              <div class="card-item  border" style="padding: 35px 20px">
+                  <div class="d-flex"><i class="bi bi-people icn-lg text-primary"></i>
+                      <div style="margin-left: 20px">
+                          <h5 class="h5 text-dark">Investment Trading</h5>
+                          <p class="paragraph text-dark" style="margin-top: 5px">the quick fox jumps over the
+                              lazy dog</p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0 p-3">
+              <div class="card-item  border" style="padding: 35px 20px">
+                  <div class="d-flex"><i class="bi bi-people icn-lg text-primary"></i>
+                      <div style="margin-left: 20px">
+                          <h5 class="h5 text-dark">Investment Trading</h5>
+                          <p class="paragraph text-dark" style="margin-top: 5px">the quick fox jumps over the
+                              lazy dog</p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="position-relative">
+      <div class="container py-5 py-md-5">
+        <div class="row align-items-stretch">
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 text-center" data-aos="zoom-in-right">
+            <h1 class="text-primary">972 +</h1>
+            <h5 class="text-dark mt-1"> Projects Done</h5>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 text-center" data-aos="zoom-in-right">
+            <h1 class="text-primary">181 +</h1>
+            <h5 class="text-dark mt-1"> Satisfied Customers</h5>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 text-center" data-aos="zoom-in-right">
+            <h1 class="text-primary">0,98 +</h1>
+            <h5 class="text-dark mt-1"> Successful projects</h5>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 text-center" data-aos="zoom-in-right">
+            <h1 class="text-primary">746 +</h1>
+            <h5 class="text-dark mt-1"> Cases</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  What Clients say -->
+    <section class="position-relative bg-light">
+      <div class="container py-5 py-md-7">
+        <div class="row justify-content-center">
+          <div class="text-center col-lg-6">
+            <h2 class="text-dark">What Clients Say</h2>
+            <p class="paragraph text-primary" style="margin-top: 10px">Problems trying to resolve the
+              conflict between
+              the two major realms of Classical physics: Newtonian mechanics </p>
+          </div>
+        </div>
+        <div class="row align-items-stretch mt-5" style="margin-top: 80px;">
+          <div class="col-lg-6 mb-4 mb-lg-0" data-aos="flip-left">
+            <div class="card-item row align-items-stretch mx-3 bg-light border">
+              <div class="col-md-4 p-0"><img src="./img/user.1.jpg" class="cover" alt=""></div>
+              <div class="card-content col-md-8" style="padding: 40px 40px;">
+                <div>
+                  <h3 class="text-dark">Regina Miles</h3>
+                  <h6 class="text-dark" style="margin-top: 10px;">Designer</h6>
+                </div>
+                <div class="stars" style="margin-top: 10px;">
+                  <i class="bi bi-star-fill icn-sm text-warning"></i>
+                  <i class="bi bi-star-fill icn-sm text-warning" style="margin-left: 5px"></i>
+                  <i class="bi bi-star-fill icn-sm text-warning" style="margin-left: 5px"></i>
+                  <i class="bi bi-star-fill icn-sm text-warning" style="margin-left: 5px"></i>
+                  <i class="bi bi-star icn-sm text-warning" style="margin-left: 5px"></i>
+                </div>
+                <p class="paragraph text-secondary" style="margin-top: 15px">This proved to be impossible
+                  using
+                  concepts of space and time. Einstein
+                  new view of time first and then</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4 mb-lg-0" data-aos="flip-right">
+            <div class="card-item row align-items-stretch mx-3 bg-light border">
+              <div class="col-md-4 p-0"><img src="./img/user.2.jpg" class="cover" alt=""></div>
+              <div class="card-content col-md-8" style="padding: 40px 40px;">
+                <div>
+                  <h3 class="text-dark">Regina Miles</h3>
+                  <h6 class="text-dark" style="margin-top: 10px;">Designer</h6>
+                </div>
+                <div class="stars" style="margin-top: 10px;">
+                  <i class="bi bi-star-fill icn-sm text-warning"></i>
+                  <i class="bi bi-star-fill icn-sm text-warning" style="margin-left: 5px"></i>
+                  <i class="bi bi-star-fill icn-sm text-warning" style="margin-left: 5px"></i>
+                  <i class="bi bi-star-fill icn-sm text-warning" style="margin-left: 5px"></i>
+                  <i class="bi bi-star icn-sm text-warning" style="margin-left: 5px"></i>
+                </div>
+                <p class="paragraph text-secondary" style="margin-top: 15px">This proved to be impossible
+                  using
+                  concepts of space and time. Einstein
+                  new view of time first and then</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- price -->
+    <section class="position-relative bg-light">
+      <div class="container py-5 py-md7">
+        <div class="row justify-content-center">
+          <div class="text-center col-lg-6">
+            <h2 class="text-dark">Pricing</h2>
+            <p class="paragraph text-primary" style="margin-top: 10px">Problems trying to resolve the
+              conflict between
+              the two major realms of Classical physics: Newtonian mechanics </p>
+          </div>
+        </div>
+        <div class="row align-items-end mt-5" style="margin-top: 80px;">
+          <div class="col-lg-4 mb-4 mb-lg-0 px-0" data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine">
+            <div class="card-item rounded bg-light border" style="padding: 50px 40px;">
+                    <h3 class="text-dark text-center">FREE</h3>
+                <h5 class="text-secondary text-center" style="margin-top: 35px;">Organize across all
+                  apps by hand</h5>
+                <div class="price d-flex justify-content-center text-left" style="margin-top: 35px;">
+                  <h2 class="text-primary" style="font-size: 4rem;">0</h2>
+                    <div style="margin-left: 10px;">
+                      <h5 class="text-primary">$</h5>
+                      <h6 class="text-secondary">Per Month</h6>
+                    </div>
+                </div>
+                <div class="pricing-list" style="margin-top: 35px;">
+                  <div class="pricing-item d-flex align-items-center">
+                    <div class="rounded-circle bg-success d-flex align-items-center justify-content-center" style="height: 30px; width:30px;"><i
+                      class="bi bi-check2 text-light"></i></div>
+                      <h6 class="text-dark" style="margin-left: 10px">Unlimited product updates
+                      </h6>
+                  </div>
+                  <div class="pricing-item d-flex align-items-center" style="margin-top: 15px">
+                    <div class="rounded-circle bg-success d-flex align-items-center justify-content-center" style="height: 30px; width:30px;"><i
+                      class="bi bi-check2 text-light"></i></div>
+                      <h6 class="text-dark" style="margin-left: 10px">Unlimited product updates
+                      </h6>
+                  </div>
+                  <div class="pricing-item d-flex align-items-center" style="margin-top: 15px">
+                    <div class="rounded-circle bg-success d-flex align-items-center justify-content-center" style="height: 30px; width:30px;"><i
+                      class="bi bi-check2 text-light"></i></div>
+                      <h6 class="text-dark" style="margin-left: 10px">Unlimited product updates
+                      </h6>
+                  </div>
+                  <div class="pricing-item d-flex align-items-center " style="margin-top: 15px">
+                    <div class="rounded-circle bg-secondary d-flex align-items-center justify-content-center" style="height: 30px; width:30px;"><i
+                      class="bi bi-check2 text-light"></i></div>
+                      <h6 class="text-dark" style="margin-left: 10px">Unlimited product updates
+                      </h6>
+                  </div>
+                  <div class="pricing-item d-flex align-items-center" style="margin-top: 15px">
+                    <div class="rounded-circle bg-secondary d-flex align-items-center justify-content-center" style="height: 30px; width:30px;"><i
+                      class="bi bi-check2 text-light"></i></div>
+                      <h6 class="text-dark" style="margin-left: 10px">Unlimited product updates
+                      </h6>
+                  </div>
+                </div>
+                <button class="btn btn-primary  w-100" style="margin-top: 35px; padding: 10px;"><span>Try for
+                  free</span></button>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4 mb-lg-0 px-0" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500">
+            <div class="card-item rounded bg-dark py-5 px-4 px-md-5" style="padding-top: 5rem !important; padding-bottom: 5rem !important;">
+              <h3 class="text-white text-center">STANDARD</h3>
+                <h5 class="text-white text-center" style="margin-top: 35px;">Organize across all
+                  apps by hand</h5>
+                <div class="price d-flex justify-content-center text-left" style="margin-top: 35px;">
+                  <h2 class="text-white" style="font-size: 4rem;">19.99</h2>
+                    <div style="margin-left: 10px;">
+                      <h5 class="text-primary">$</h5>
+                      <h6 class="text-secondary">Per Month</h6>
+                    </div>
+                </div>
+                <div class="pricing-list" style="margin-top: 35px;">
+                  <div class="pricing-item d-flex align-items-center">
+                    <div class="rounded-circle bg-success d-flex align-items-center justify-content-center" style="height: 30px; width:30px;"><i
+                      class="bi bi-check2 text-white"></i></div>
+                      <h6 class="text-white" style="margin-left: 10px">Unlimited product updates
+                      </h6>
+                  </div>
+                  <div class="pricing-item d-flex align-items-center" style="margin-top: 15px">
+                    <div class="rounded-circle bg-success d-flex align-items-center justify-content-center" style="height: 30px; width:30px;"><i
+                      class="bi bi-check2 text-white"></i></div>
+                      <h6 class="text-white" style="margin-left: 10px">Unlimited product updates
+                      </h6>
+                  </div>
+                  <div class="pricing-item d-flex align-items-center" style="margin-top: 15px">
+                    <div class="rounded-circle bg-success d-flex align-items-center justify-content-center" style="height: 30px; width:30px;"><i
+                      class="bi bi-check2 text-white"></i></div>
+                      <h6 class="text-white" style="margin-left: 10px">Unlimited product updates
+                      </h6>
+                  </div>
+                  <div class="pricing-item d-flex align-items-center " style="margin-top: 15px">
+                    <div class="rounded-circle bg-secondary d-flex align-items-center justify-content-center" style="height: 30px; width:30px;"><i
+                      class="bi bi-check2 text-white"></i></div>
+                      <h6 class="text-white" style="margin-left: 10px">Unlimited product updates
+                      </h6>
+                  </div>
+                  <div class="pricing-item d-flex align-items-center" style="margin-top: 15px">
+                    <div class="rounded-circle bg-secondary d-flex align-items-center justify-content-center" style="height: 30px; width:30px;"><i
+                      class="bi bi-check2 text-white"></i></div>
+                      <h6 class="text-white" style="margin-left: 10px">Unlimited product updates
+                      </h6>
+                  </div>
+                </div>
+                <button class="btn btn-primary  w-100" style="margin-top: 35px; padding: 10px;"><span>Try for
+                  free</span></button>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4 mb-lg-0 px-0" data-aos="fade-left"data-aos-offset="300"data-aos-easing="ease-in-sine">
+            <div class="card-item rounded bg-light border" style="padding: 50px 40px;">
+                    <h3 class="text-dark text-center">PREMIUM</h3>
+                <h5 class="text-secondary text-center" style="margin-top: 35px;">Organize across all
+                  apps by hand</h5>
+                <div class="price d-flex justify-content-center text-left" style="margin-top: 35px;">
+                  <h2 class="text-primary" style="font-size: 4rem;">99.99</h2>
+                    <div style="margin-left: 10px;">
+                      <h5 class="text-primary">$</h5>
+                      <h6 class="text-secondary">Per Month</h6>
+                    </div>
+                </div>
+                <div class="pricing-list" style="margin-top: 35px;">
+                  <div class="pricing-item d-flex align-items-center">
+                    <div class="rounded-circle bg-success d-flex align-items-center justify-content-center" style="height: 30px; width:30px;"><i
+                      class="bi bi-check2 text-light"></i></div>
+                      <h6 class="text-dark" style="margin-left: 10px">Unlimited product updates
+                      </h6>
+                  </div>
+                  <div class="pricing-item d-flex align-items-center" style="margin-top: 15px">
+                    <div class="rounded-circle bg-success d-flex align-items-center justify-content-center" style="height: 30px; width:30px;"><i
+                      class="bi bi-check2 text-light"></i></div>
+                      <h6 class="text-dark" style="margin-left: 10px">Unlimited product updates
+                      </h6>
+                  </div>
+                  <div class="pricing-item d-flex align-items-center" style="margin-top: 15px">
+                    <div class="rounded-circle bg-success d-flex align-items-center justify-content-center" style="height: 30px; width:30px;"><i
+                      class="bi bi-check2 text-light"></i></div>
+                      <h6 class="text-dark" style="margin-left: 10px">Unlimited product updates
+                      </h6>
+                  </div>
+                  <div class="pricing-item d-flex align-items-center " style="margin-top: 15px">
+                    <div class="rounded-circle bg-secondary d-flex align-items-center justify-content-center" style="height: 30px; width:30px;"><i
+                      class="bi bi-check2 text-light"></i></div>
+                      <h6 class="text-dark" style="margin-left: 10px">Unlimited product updates
+                      </h6>
+                  </div>
+                  <div class="pricing-item d-flex align-items-center" style="margin-top: 15px">
+                    <div class="rounded-circle bg-secondary d-flex align-items-center justify-content-center" style="height: 30px; width:30px;"><i
+                      class="bi bi-check2 text-light"></i></div>
+                      <h6 class="text-dark" style="margin-left: 10px">Unlimited product updates
+                      </h6>
+                  </div>
+                </div>
+                <button class="btn btn-primary  w-100" style="margin-top: 35px; padding: 10px;"><span>Try for
+                  free</span></button>
+            </div>
+          </div>
+         
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- map contact -->
+    <div class="container-fluid map-bg bg-light">
+      <div class="container py-5" style="padding-top: 10rem !important;" >
+        <div class="row align-items-stretch" style="margin-top: 50px;">
+          <div class="col-lg-12">
+            <div class="text-center round px-4 px-md-5 bg-light" style="padding: 40px 0;">
+              <div class="text-center">
+                <h5 class="text-dark">Contact Us</h5>
+                <h2 style="margin-top: 10px;">Make An Appointment</h2>
+              </div>
+              <div class="card-contet" style="margin-top: 30px;">
+                <div class="row">
+                  <div class="form-group col-md-6"><input type="text" placeholder="Full Name*" class="form-control p-3"></div>
+                  <div class="form-group col-md-6 mt-3 mt-md-0"><input type="Email" placeholder="Email*" class="form-control p-3"></div>
+                </div>
+                <div class="row mt-3">
+                  <div class="form-group col-md-6">
+                    <select class="form-select p-3">
+                      <option>Please Select</option>
+                      <option>List Entry # 1</option>
+                      <option>List Entry # 2</option>
+                      <option>List Entry # 3</option>
+                      <option>List Entry # 4</option>
+                      <option>List Entry # 5</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6 ">
+                    <select class="form-select p-3">
+                      <option>4:00 Available</option>
+                      <option>List Entry # 1</option>
+                      <option>List Entry # 2</option>
+                      <option>List Entry # 3</option>
+                      <option>List Entry # 4</option>
+                      <option>List Entry # 5</option>
+                    </select>
+                  </div>
+                </div>
+                <textarea class="form-control p-3" placeholder="Message" style="margin-top: 10px;"></textarea>
+              </div>
+              <button type="button" class="btn btn-primary" style="margin-top: 40px; padding: 12px 24px;">Book Appointment</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="position-relative">
+      <div class="position-relative bg-light">
+        <div class="container py-4">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-md-8 mb-5 mb-md-0">
+              <h3 class="text-dark">Consulting Agency For Your Business</h3>
+              <p class="paragraph text-secondary" style="margin-top: 10px">the quick fox jumps over the
+                lazy dog</p>
+            </div>
+            <div class="col-md-3 text-md-center"><button type="button" class="btn btn-primary" style="padding: 12px 24px;">Contact Us</button></div>
+          </div>
+        </div>
+      </div>
+      <div class="position-relative background-grad">
+        <div class="container py-5">
+          <div class="row align-items-stretch">
+            <div class="col-lg-2 col-md-4 mb-5 mb-lg-0">
+              <h5 class="text-white">Company Info</h5>
+              <div class="links" style="margin-top: 20px">
+                <a class="link d-block light-text-color" href="#">About Us</a>
+                <a class="link d-block light-text-color" href="#" style="margin-top: 10px">Carrier</a>
+                <a class="link d-block light-text-color" href="#" style="margin-top: 10px">We are hiring</a>
+                <a class="link d-block light-text-color"href="#" style="margin-top: 10px">Blog</a></div>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-5 mb-lg-0">
+              <h5 class="text-white">Company Info</h5>
+              <div class="links" style="margin-top: 20px">
+                <a class="link d-block light-text-color" href="#">About Us</a>
+                <a class="link d-block light-text-color" href="#" style="margin-top: 10px">Carrier</a>
+                <a class="link d-block light-text-color" href="#" style="margin-top: 10px">We are hiring</a>
+                <a class="link d-block light-text-color"href="#" style="margin-top: 10px">Blog</a></div>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-5 mb-lg-0">
+              <h5 class="text-white">Company Info</h5>
+              <div class="links" style="margin-top: 20px">
+                <a class="link d-block light-text-color" href="#">About Us</a>
+                <a class="link d-block light-text-color" href="#" style="margin-top: 10px">Carrier</a>
+                <a class="link d-block light-text-color" href="#" style="margin-top: 10px">We are hiring</a>
+                <a class="link d-block light-text-color"href="#" style="margin-top: 10px">Blog</a></div>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-5 mb-lg-0">
+              <h5 class="text-white">Company Info</h5>
+              <div class="links" style="margin-top: 20px">
+                <a class="link d-block light-text-color" href="#">About Us</a>
+                <a class="link d-block light-text-color" href="#" style="margin-top: 10px">Carrier</a>
+                <a class="link d-block light-text-color" href="#" style="margin-top: 10px">We are hiring</a>
+                <a class="link d-block light-text-color"href="#" style="margin-top: 10px">Blog</a></div>
+            </div>
+            <div class="col-lg-4 col-md-4 mb-5 mb-lg-0">
+              <h5 class="text-white">Company Info</h5>
+                <div class="links" style="margin-top: 20px">
+                  <div class=" d-flex align-items-center"><i
+                    class="bi bi-telephone-fill text-light fs-4"></i>
+                    <h6 class="text-light" style="margin-left: 10px">(480) 555-0103</h6>
+                </div>
+                <div class=" d-flex align-items-center" style="margin-top: 10px;"><i
+                  class="bi bi-geo-alt text-light fs-4"></i>
+                  <h6 class="text-light" style="margin-left: 10px">(480) 555-0103</h6>
+                </div>
+                <div class=" d-flex align-items-center" style="margin-top: 5px;"><i
+                  class="bi bi-envelope-fill text-light fs-4"></i>
+                  <h6 class="text-light" style="margin-left: 10px">(480) 555-0103</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="position-relative bg-light">
+        <div class="container py-4">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-md-6 mb-5 mb-md-0">
+              <h6 class="text-secondary">Made With Love By Figmaland All Right Reserved </h6>
+            </div>
+            <div class="col-md-3 text-center">
+              <div class="card-content py-2">
+                <a class="facebook" href="#"><i class="bi bi-facebook text-primary fs-4" style="margin-left: 20px"></i></a>
+                <a class="instagram" href="#"><i class="bi bi-instagram  text-primary fs-4" style="margin-left: 20px"></i></a>
+                <a class="twitter" href="#"><i class="bi bi-twitter  text-primary fs-4" style="margin-left: 20px"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

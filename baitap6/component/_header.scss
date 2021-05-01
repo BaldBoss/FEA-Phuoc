@@ -1,52 +1,53 @@
-.header{
-    width: 100%;
-    height: auto;
-    min-height: 900px;
-    padding-bottom: 70px;
-    background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(50, 58, 69, 0.9))
-    );
-    background-image: linear-gradient(
-        180deg,
-        rgba(50, 58, 69, 0.55),
-        rgba(50, 58, 69, 0.75)
-      ),
-      url("/baitap5/Coding_Bootstrap/img/10.jpg");
-    background-position: 0px 0px, 100% 50%;
-    background-repeat: no-repeat;
-    background-size: auto, cover;
-    white-space: normal;
-    object-fit: fill;
-    -o-object-fit: fill;
-    position: static;
-    display: block;
-    overflow: visible;
-    top: 0;
-    flex-direction: column;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-fkex-direction: column;
-    .navbar{
-        .navbar-brand{
-            color: #fff;
-            font-weight:500;
-            font-size: 2rem;
-        }
-        .fas{
-            color: #fff;
-        }
-        .navbar-collapse{
-            .nav-link{
-                color: #fff;
-                font-size: 1.2rem;
-            }
-        }
+.header {
+  width: 100%;
+  height: auto;
+  min-height: 900px;
+  padding-bottom: 70px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(50, 58, 69, 0.9))
+  );
+  background-image: linear-gradient(
+      180deg,
+      rgba(50, 58, 69, 0.55),
+      rgba(50, 58, 69, 0.75)
+    ),
+    url("./img/hero-cover.3.jpg");
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: 100% 78%, 100% 78%;
+  white-space: normal;
+  object-fit: fill;
+  -o-object-fit: fill;
+  position: static;
+  display: block;
+  overflow: visible;
+  top: 0;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-fkex-direction: column;
+
+  .navbar {
+    .navbar-brand {
+      color: #fff;
+      font-weight: 500;
+      font-size: 2rem;
     }
-    h1{
+    .fas {
+      color: #fff;
+    }
+    .navbar-collapse {
+      .nav-link {
+        color: #fff;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  h1 {
     font-size: 3rem;
     font-weight: bold;
     line-height: 1.4;
@@ -55,9 +56,9 @@
     margin-top: 200px;
     margin-bottom: 8px;
     min-height: 100px;
-    }
-        p{
-            font-family: Montserrat;
+  }
+  p {
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -69,8 +70,7 @@
 
     /* light-text-color */
 
-    color: #FFFFFF;
-
+    color: #ffffff;
 
     /* Inside Auto Layout */
 
@@ -78,5 +78,10 @@
     order: 1;
     flex-grow: 0;
     margin: 40px 0px;
-    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .header {
+    background-size: auto, cover;
+  }
 }

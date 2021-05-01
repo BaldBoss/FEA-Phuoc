@@ -26,6 +26,7 @@
           flex-direction: column;
   color: #fff;
 }
+
 .Header .h1 {
   font-size: 3rem;
 }
@@ -46,17 +47,20 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
 .searchbar h5 {
   margin-right: 30px;
   font-size: 1.4rem;
   color: #fff;
 }
+
 .searchbar ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
 }
+
 .searchbar ul li {
   margin-right: 40px;
   color: #fff;
@@ -77,14 +81,17 @@
   display: flex;
   width: 100%;
 }
+
 .bodyContent .bodyContent__left {
   width: 30%;
 }
+
 .bodyContent .bodyContent__left h1 {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
+
 .bodyContent .bodyContent__left .ContentCard {
   width: 90%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -93,18 +100,22 @@
   margin-right: auto;
   margin-bottom: 10px;
 }
-.bodyContent .bodyContent__left .ContentCard .imgBox, .bodyContent .bodyContent__left .ContentCard .imgbox3, .bodyContent .bodyContent__left .ContentCard .imgBox2 {
+
+.bodyContent .bodyContent__left .ContentCard .imgBox, .bodyContent .bodyContent__left .ContentCard .imgBox2, .bodyContent .bodyContent__left .ContentCard .imgbox3 {
   background-image: url("/baitap1/img/avatar-2.jpg");
   height: 250px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+
 .bodyContent .bodyContent__left .ContentCard .imgBox2 {
   background-image: url("/baitap1/img/backend.png");
 }
+
 .bodyContent .bodyContent__left .ContentCard .imgbox3 {
   background-image: url("/baitap1/img/tdknlt.png");
 }
+
 .bodyContent .bodyContent__left .ContentCard .Card__Text .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,21 +129,26 @@
   padding: 10px 10px 10px 10px;
   padding: 10px 10px 10px 10px;
 }
+
 .bodyContent .bodyContent__left .ContentCard .Card__Text .row .title {
   width: 40%;
   font-size: 1.3rem;
   font-weight: 700;
   text-transform: uppercase;
 }
+
 .bodyContent .bodyContent__left .ContentCard .Card__Text .row .content {
   width: 60%;
 }
+
 .bodyContent .bodyContent__left .ContentCard .Card__Text .row .blueText {
   color: blue;
 }
+
 .bodyContent .bodyContent__left .ContentCard .Card__Text .Text__Container {
   padding: 10px 10px 10px 10px;
 }
+
 .bodyContent .bodyContent__left .ContentCard .Card__Text .Text__Container ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,39 +160,48 @@
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
 }
+
 .bodyContent .bodyContent__left .ContentCard .Card__Text .Text__Container ul li .yellowStarP {
   color: #eecc0e;
   margin-right: 5px;
 }
+
 .bodyContent .bodyContent__left .ContentCard .Card__Text .Text__Container p {
   color: darkgrey;
 }
+
 .bodyContent .bodyContent__right {
   width: 70%;
 }
+
 .bodyContent .bodyContent__right .contentRight__Container {
   padding: 0 3%;
 }
+
 .bodyContent .bodyContent__right .contentRight__Container h1:not(:first-of-type) {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
 .bodyContent .bodyContent__right .contentRight__Container .skillRow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 40px;
 }
+
 .bodyContent .bodyContent__right .contentRight__Container .skillRow .skillTitle {
   width: 20%;
   text-transform: uppercase;
 }
+
 .bodyContent .bodyContent__right .contentRight__Container .skillRow .skillBar {
   width: 80%;
   border-radius: 4px;
   background-color: darkgrey;
   height: 40px;
 }
+
 .bodyContent .bodyContent__right .contentRight__Container .skillRow .skillBar .BarPercent {
   width: 90%;
   height: 100%;
@@ -193,31 +218,40 @@
           align-items: center;
   color: #fff;
 }
+
 .bodyContent .bodyContent__right .contentRight__Container .skillRow .skillBar .cssSkill {
   width: 70%;
   background-color: #a454f0;
 }
+
 .bodyContent .bodyContent__right .contentRight__Container .skillRow .skillBar .javascriptSkill {
   width: 50%;
   background-color: #6770f8;
 }
+
 .bodyContent .bodyContent__right .contentRight__Container .skillRow .skillBar .golangSkill {
   width: 85%;
   background-color: #0051ff;
 }
+
 .bodyContent .bodyContent__right .contentRight__Container .quoteContainer {
   border-left: 3px solid grey;
   padding: 5px 10px 5px 2%;
   margin-left: 20px;
   background-color: #d5d6d6;
 }
+
 .bodyContent .bodyContent__right .contentRight__Container .gridContainer {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
 }
+
 .bodyContent .bodyContent__right .contentRight__Container .gridContainer .Card__Container {
   padding: 20px;
 }
+
 .bodyContent .bodyContent__right .contentRight__Container .gridContainer .Card__Container .Card__Content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -233,6 +267,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
 .bodyContent .bodyContent__right .contentRight__Container .gridContainer .Card__Container .Card__Content .Circle__icon {
   width: 80px;
   height: 80px;
@@ -249,6 +284,7 @@
           align-items: center;
   color: #fff;
 }
+
 .bodyContent .bodyContent__right .contentRight__Container .gridContainer .Card__Container .Card__Content p {
   text-align: justify;
 }
@@ -268,4 +304,5 @@
           align-items: center;
   color: #fff;
   margin-top: 30px;
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */

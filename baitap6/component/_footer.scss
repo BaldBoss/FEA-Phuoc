@@ -1,0 +1,21 @@
+footer {
+  .background-grad {
+    background: #d71489;
+    background: -moz-linear-gradient(-90deg, #d71489 0%, #004788 100%);
+    background: -webkit-linear-gradient(-90deg, #d71489 0%, #004788 100%);
+    background: linear-gradient(-90deg, #d71489 0%, #004788 100%);
+    a {
+      list-style: none;
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+      line-height: 1.4;
+      font-weight: 500;
+    }
+    h5 {
+      font-size: 16px;
+      line-height: 1.6;
+      font-weight: 700;
+    }
+  }
+}
