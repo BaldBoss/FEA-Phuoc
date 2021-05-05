@@ -11,57 +11,41 @@
     <script>
         $(document).ready(function(){
             $(".menu1").mouseenter(function(){
-                $(".firstmenu").css({"background-color": "yellow",
-                "width":"100%","transition":" width 2s","height":"100%"
-            
-            });
+                $(this).children(".menu").css(
+                "width","100%" 
+            );
             });
             $(".menu1").mouseleave(function(){
-                $(".firstmenu").css({"background-color": "yellow",
-                "width":"0%","height":"100%"
+                $(this).children(".menu").css({
+                "width":"0%"
             
             });
             });
-            $(".menu2").mouseenter(function(){
-                $(".secondmenu").css({"background-color": "yellow",
-                "width":"100%","transition":" width 2s","height":"100%"
-            
-            });
-            });
-            $(".menu2").mouseleave(function(){
-                $(".secondmenu").css({"background-color": "yellow",
-                "width":"0%","height":"100%"
-            
-            });
-            });
-            $(".menu3").mouseenter(function(){
-                $(".thirdmenu").css({"background-color": "yellow",
-                "width":"100%","transition":" width 2s","height":"100%"
-            
-            });
-            });
-            $(".menu3").mouseleave(function(){
-                $(".thirdmenu").css({"background-color": "yellow",
-                "width":"0%","height":"100%"
-            
-            });
-            });
+           
         });
     </script>
+    <style>
+        .menu{
+            background-color: yellow;
+            width: 0%;
+            transition: width 2s;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="menu1 col-sm-12 col-md-3  border mt-5" style="height: 100px; padding: 0; position: relative;">
-                <div class="firstmenu " style="width: 0%;"></div>
+                <div class="menu "></div>
                 <p style="position: absolute; top: 40%; right: 40%;">menu1</p>
             </div>
-            <div class="menu2 col-sm-12 col-md-3  border mt-5" style="height: 100px;padding: 0;position: relative;">
-                <div class="secondmenu " style="width: 0%;"></div>
+            <div class="menu1 col-sm-12 col-md-3  border mt-5" style="height: 100px;padding: 0;position: relative;">
+                <div class="menu " style="width: 0%;"></div>
                 <p style="position: absolute; top: 40%; right: 40%;">menu2</p>
             </div>
-            <div class="menu3 col-sm-12 col-md-3  border mt-5" style="height: 100px;padding: 0;position: relative;">
-                <div class="thirdmenu " style="width: 0%;"></div>
+            <div class="menu1 col-sm-12 col-md-3  border mt-5" style="height: 100px;padding: 0;position: relative;">
+                <div class="menu " style="width: 0%;"></div>
                 <p style="position: absolute; top: 40%; right: 40%;">menu3</p>
             </div>
         </div>
