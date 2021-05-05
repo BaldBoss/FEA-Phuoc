@@ -1,0 +1,39 @@
+.bf {
+  .introbf {
+    h1 {
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+    p {
+      width: 45rem;
+      margin-bottom: 40px;
+    }
+  }
+  .bfcard {
+    width: 100%;
+    .cardContainer {
+      padding: 30px;
+      .card {
+        width: 360px;
+        border: none;
+        .card-body {
+          .fa-camera {
+            color: yellow;
+            margin-bottom: 20px;
+          }
+          .fa-heart {
+            color: red;
+            @extend .fa-camera;
+          }
+          .fa-bicycle {
+            color: blue;
+            @extend .fa-camera;
+          }
+          h5 {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}

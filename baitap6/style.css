@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+h2 {
+  font-size: 40px !important;
+  line-height: 1.5 !important;
+  font-weight: 800 !important;
+}
+
+.icn-lg {
+  font-weight: 700;
+  width: 48px !important;
+  height: 48px !important;
+  font-size: 48px;
+}
+
+.paragraph {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  min-height: 900px;
+  padding-bottom: 70px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 58, 69, 0.55)), to(rgba(50, 58, 69, 0.75))), url("./img/hero-cover.3.jpg");
+  background-image: linear-gradient(180deg, rgba(50, 58, 69, 0.55), rgba(50, 58, 69, 0.75)), url("./img/hero-cover.3.jpg");
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: 100% 78%, 100% 78%;
+  white-space: normal;
+  object-fit: fill;
+  -o-object-fit: fill;
+  position: static;
+  display: block;
+  overflow: visible;
+  top: 0;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-fkex-direction: column;
+}
+
+.header .navbar .navbar-brand {
+  color: #fff;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.header .navbar .fas {
+  color: #fff;
+}
+
+.header .navbar .navbar-collapse .nav-link {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.4;
+  text-align: center;
+  color: #fff;
+  margin-top: 200px;
+  margin-bottom: 8px;
+  min-height: 100px;
+}
+
+.header p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  /* or 150% */
+  text-align: center;
+  letter-spacing: 0.2px;
+  /* light-text-color */
+  color: #ffffff;
+  /* Inside Auto Layout */
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 40px 0px;
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    background-size: auto, cover;
+  }
+}
+
+footer .background-grad {
+  background: #d71489;
+  background: -webkit-gradient(linear, right top, left top, from(#d71489), to(#004788));
+  background: linear-gradient(-90deg, #d71489 0%, #004788 100%);
+}
+
+footer .background-grad a {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+footer .background-grad h5 {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 700;
+}
+
+.map-bg {
+  background-image: url("/baitap6/img/map.jpg");
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=style.css.map */
