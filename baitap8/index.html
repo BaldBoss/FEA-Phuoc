@@ -24,7 +24,9 @@
     </div>
 
     <div class="load-more-wrapper">
-        <button>Load More</button>
+        <button id="previus">previus</button>
+        <span id="page"></span>
+        <button id="next">Load More</button>
     </div>
 
     <script>
@@ -62,19 +64,55 @@
             });
         }
 
-
-        $(document).ready(function(){
-            let count = 1;
-            let size = 10;
-            loadItemsAndRender(count, size);
-            $("button").on("click",function(){
-                count++;
-                size += 10
-                loadItemsAndRender(count, size);
-                console.log(count);
-                console.log(size);
-            })
+        function renderPagecount(data){
+            var e = document.querySelectorAll(".item img");
+            var h = document.querySelectorAll(".item h4");
+                for(let i = 0; i < data.length; i++){
+                    console.log(data[i].url)
+                    e[i].src = data[i].url;
+                    h[i].innerHTML = data[i].title;
+                    // for(let j =0 ; j>i-1; j++){
+                    //     )
+                      
+                    // }
+                }
+           
+           
+        }
+        function loadItemsAndRender2(pageIndex, pageSize) {
+            var data = {
+                _page: pageIndex,
+                _limit: pageSize,
+                }
+            var params = jQuery.param(data)
+            var url = 'https://jsonplaceholder.typicode.com/photos?' + params;
+            console.log(url);
+            $.get(url, function(data, status) {
+                renderPagecount(data)
+            });
+        }
             
+        $(document).ready(function(){
+            var count = 1;
+           var c
+            var size = 10;
+            loadItemsAndRender(count, size);
+            $("#page").text(count);
+           
+            $("#next").on("click",function(){
+                var v = ++count;
+                size = 10
+                $("#page").text(v);
+                loadItemsAndRender2(v, size);
+                
+                $("#previus").on("click",function(){
+                    count = --v;
+                    $("#page").text(v)
+                    loadItemsAndRender2(count, size);
+                    return count = v
+                })
+            })
+    
         });
 
 
