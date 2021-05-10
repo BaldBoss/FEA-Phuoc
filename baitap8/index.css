@@ -1,0 +1,36 @@
+.list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.list-container .item-wrapper {
+  padding: 10px;
+}
+
+.list-container .item-wrapper .item {
+  width: 100%;
+}
+
+.list-container .item-wrapper .item img {
+  width: 100%;
+  height: auto;
+}
+
+.list-container .item-wrapper .item h4 {
+  margin-top: 10px;
+}
+
+.load-more-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+/*# sourceMappingURL=index.css.map */
